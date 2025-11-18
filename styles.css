@@ -1,1 +1,46 @@
-/*  your css code here. If applicable */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 90vw;
+}
+
+.panel {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: flex 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel h3 {
+  opacity: 0;
+  color: white;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+}
+
+#panel-1 { background-image: url("https://images.unsplash.com/photo-1558979158-65a1eaa08691?auto=format&fit=crop&w=1350&q=80"); }
+#panel-2 { background-image: url("https://images.unsplash.com/photo-1572276596237-5db2c3e16c5d?auto=format&fit=crop&w=1350&q=80"); }
+#panel-3 { background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1353&q=80"); }
+#panel-4 { background-image: url("https://images.unsplash.com/photo-1551009175-8a68da93d5f9?auto=format&fit=crop&w=1351&q=80"); }
+#panel-5 { background-image: url("https://images.unsplash.com/photo-1549880338-65ddcdfd017b?auto=format&fit=crop&w=1350&q=80"); }
